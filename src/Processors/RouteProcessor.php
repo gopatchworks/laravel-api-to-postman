@@ -40,7 +40,7 @@ class RouteProcessor
     {
         $this->output = $output;
 
-        $routes = collect($this->router->getRoutes());
+        $routes = collect($this->router->getRoutes())->sort(fn ($a, $b) => strcmp($a->uri(), $b->uri()));
 
         /** @var Route $route */
         foreach ($routes as $route) {
