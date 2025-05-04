@@ -1,8 +1,8 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Processors;
+namespace PostmanGenerator\Processors;
 
-use AndreasElia\PostmanGenerator\Concerns\HasAuthentication;
+use PostmanGenerator\Concerns\HasAuthentication;
 use Closure;
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Validation\Rule;
@@ -56,6 +56,10 @@ class RouteProcessor
     protected function processRoute(Route $route)
     {
         try {
+            if (in_array($route->getName(), $this->config['hidden_routes'])) {
+                return;
+            }
+
             $methods = array_filter($route->methods(), fn ($value) => $value !== 'HEAD');
             $middlewares = $route->gatherMiddleware();
 

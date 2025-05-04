@@ -1,9 +1,9 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Tests\Feature;
+namespace PostmanGenerator\Tests\Feature;
 
-use AndreasElia\PostmanGenerator\Tests\Fixtures\CollectionHelpersTrait;
-use AndreasElia\PostmanGenerator\Tests\TestCase;
+use PostmanGenerator\Tests\Fixtures\CollectionHelpersTrait;
+use PostmanGenerator\Tests\TestCase;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Storage;
 

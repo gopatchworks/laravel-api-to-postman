@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Processors;
+namespace PostmanGenerator\Processors;
 
 use Illuminate\Support\Str;
 use PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;

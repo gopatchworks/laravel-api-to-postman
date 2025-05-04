@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Tests\Fixtures;
+namespace PostmanGenerator\Tests\Fixtures;
 
 use Illuminate\Database\Eloquent\Model;
 

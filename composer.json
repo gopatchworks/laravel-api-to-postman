@@ -1,5 +1,5 @@
 {
-    "name": "andreaselia/laravel-api-to-postman",
+    "name": "gopatchworks/laravel-api-to-postman",
     "description": "Generate a Postman collection automatically from your Laravel API",
     "keywords": [
         "laravel",
@@ -12,22 +12,26 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Patchworks",
+            "email": "developers@weaprepatchworks.com"
+        },
+        {
             "name": "Andreas Elia",
             "email": "andreaselia@live.co.uk"
         }
     ],
     "autoload": {
         "psr-4": {
-            "AndreasElia\\PostmanGenerator\\": "src/"
+            "PostmanGenerator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "AndreasElia\\PostmanGenerator\\Tests\\": "tests"
+            "PostmanGenerator\\Tests\\": "tests"
         }
     },
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "^7.4|^8.0|^8.1|^8.2|^8.3",
         "ext-json": "*",
         "illuminate/config": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
         "illuminate/console": "^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
@@ -39,7 +43,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AndreasElia\\PostmanGenerator\\PostmanGeneratorServiceProvider"
+                "PostmanGenerator\\PostmanGeneratorServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator\Processors;
+namespace PostmanGenerator\Processors;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Collection;

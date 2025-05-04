@@ -1,8 +1,8 @@
 <?php
 
-namespace AndreasElia\PostmanGenerator;
+namespace PostmanGenerator;
 
-use AndreasElia\PostmanGenerator\Commands\ExportPostmanCommand;
+use PostmanGenerator\Commands\ExportPostmanCommand;
 use Illuminate\Support\ServiceProvider;
 
 class PostmanGeneratorServiceProvider extends ServiceProvider
